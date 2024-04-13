@@ -32,8 +32,10 @@ $('.slider').slick({
 const switch12 = document.querySelector(".switch");
 const sliderbtn = document.querySelector(".slider-btn");
 const card1 = document.querySelector(".card");
+var box12 = document.querySelector(".box-12");
 
 switch12.addEventListener("click", function () {
     sliderbtn.classList.toggle("btn-right");
     card1.classList.toggle("btn-avtive1");
+    box12.classList.toggle("year11");
 })

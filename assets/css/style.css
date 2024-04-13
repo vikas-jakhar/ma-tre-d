@@ -10,6 +10,7 @@
 
 :root {
     /* font-size */
+    --fs-14: 14px;
     --fs-16: 16px;
     --fs-20: 20px;
     --fs-24: 24px;
@@ -361,6 +362,35 @@
     place-items: center;
 }
 
+.text-5 {
+    font-family: "Work Sans", sans-serif;
+    font-size: var(--fs-14);
+    font-weight: 500;
+    line-height: 16.42px;
+    color: var(--color-white);
+}
+
+.text-up {
+    top: 20px;
+}
+
+.pr-51 {
+    padding-right: 51px;
+}
+
+.year {
+    display: none;
+}
+
+.year11 {
+    .year {
+        display: flex;
+    }
+
+    .month {
+        display: none;
+    }
+}
 
 
 
@@ -371,7 +401,9 @@
 
 
 
-
+.fs-48 {
+    font-size: var(--fs-48);
+}
 
 .color-white {
     color: var(--color-white);
