@@ -250,6 +250,7 @@
     background: #FFFFFF;
     padding: 10px;
     border-radius: 8px;
+    display: flex !important;
 }
 
 .slick-track {
@@ -274,4 +275,122 @@
     padding: 10px;
     text-align: center;
     margin: 15px;
+}
+
+.plus {
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+
+.box-01 {
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    padding: 27px 0px;
+}
+
+.switch {
+    width: 77.16px;
+    height: 34.72px;
+    border-radius: 19.29px;
+    background-color: var(--color-white);
+    transition: all 4s ease-in-out;
+    padding: 0px 5px;
+    justify-content: start;
+    cursor: pointer;
+}
+
+.slider-btn {
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    width: 27.01px;
+    height: 27.01px;
+    display: flex;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-right {
+    transform: translateX(145%);
+}
+
+.text-4 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30.76px;
+    color: var(--color-white);
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 6px 12px 0px #0000000F;
+    background-color: var(--color-white);
+}
+
+.fs-20 {
+    font-size: var(--fs-20);
+}
+
+.icon-tick {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.color-white {
+    color: var(--color-white);
+}
+
+@media (min-width:768px) {
+    .fs-md-20 {
+        font-size: var(--fs-20);
+    }
+}
+
+@media (min-width:992px) {
+    .prev {
+        background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        top: 50%;
+        left: -40px;
+    }
+
+    .next {
+        background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        top: 50%;
+        right: -40px;
+    }
+}
+
+@media (min-width:1440px) {
+    .prev {
+        top: 50%;
+        left: -60px;
+    }
+
+    .next {
+        top: 50%;
+        right: -60px;
+    }
 }
