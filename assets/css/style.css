@@ -13,9 +13,10 @@
     --fs-16: 16px;
     --fs-20: 20px;
     --fs-24: 24px;
+    --fs-48: 48px;
     --fs-sm: 23px;
     --fs-md: 40px;
-    --fs-lg: ;
+    --fs-lg: 50px;
     --fs-xl: 61px;
     /* color */
     --color-white: white;
@@ -334,6 +335,31 @@
     display: none;
 }
 
+.btn-avtive1 {
+    .icon-tick {
+        display: flex;
+    }
+
+    .icon-cross {
+        display: none;
+    }
+}
+
+.box-12 {
+    background: linear-gradient(96.64deg, #FD9B2B 13.58%, #F14F09 86.99%);
+    padding: 41px 21px;
+    border-radius: 10px;
+}
+
+.diamond {
+    box-shadow: 0px 3.53px 8.82px 0px #3537D108;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    display: grid;
+    place-items: center;
+}
 
 
 
