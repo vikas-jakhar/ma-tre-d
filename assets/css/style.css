@@ -19,7 +19,7 @@
     --fs-sm: 23px;
     --fs-md: 40px;
     --fs-lg: 50px;
-    --fs-xl: 61px;
+    --fs-xl: 45px;
     /* color */
     --color-white: white;
     --color-black: black;
@@ -63,6 +63,14 @@
 .line-1 {
     left: -40px;
     bottom: -48px;
+    transition: all 0.3s ease-in-out;
+    animation: 1s line1 infinite;
+}
+
+@keyframes line1 {
+    0% {
+        transform: rotate(180deg);
+    }
 }
 
 .list-text {
@@ -77,16 +85,37 @@
     background: #ECB239;
     width: 87px;
     height: 87px;
-    top: 181px;
+    top: 40%;
     right: 3%;
     border-radius: 50%;
+    transition: all 1s ease-in-out;
+    animation: 8s sun infinite;
+}
+
+@keyframes sun {
+    0% {
+        filter: drop-shadow(0 0 15px #ECB239);
+        right: 3%;
+    }
+
+    50% {
+        background-color: #ec3939;
+        filter: drop-shadow(0 0 25px #ec3939);
+        right: 50%;
+    }
+
+    100% {
+        filter: drop-shadow(0 0 15px #ECB239);
+        right: 3%;
+    }
 }
 
 .z-10 {
     z-index: 10;
 }
 
-.btn-sunmit {
+.btn-sunmit,
+.btn11 {
     font-family: "Work Sans", sans-serif;
     font-size: var(--fs-20);
     font-weight: 700;
@@ -106,6 +135,11 @@
     color: transparent;
     border: 2px solid #F14F09;
     box-shadow: 0 0 10px #FD9B2B;
+}
+
+.btn11:hover {
+    background: linear-gradient(to bottom, #FFFFFF, #ECB239);
+    color: #F14F09;
 }
 
 .section-1 {
