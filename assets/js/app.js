@@ -46,12 +46,7 @@ const menuicon = document.querySelector(".menu-icon");
 
 menuicon.addEventListener("click", function () {
     menulist.classList.toggle("showlist");
-});
-
-$(document).ready(function () {
-    $('.menu-icon').click(function () {
-        $(this).toggleClass('open');
-    });
+    menuicon.classList.toggle("open");
 });
 
 const scrolltop1 = document.querySelector(".scrolltop");
