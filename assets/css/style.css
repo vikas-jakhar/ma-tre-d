@@ -10,6 +10,7 @@
 
 :root {
     /* font-size */
+    --fs-12: 12px;
     --fs-14: 14px;
     --fs-16: 16px;
     --fs-20: 20px;
@@ -404,10 +405,28 @@
     resize: none;
 }
 
+.fs-14 {
+    font-size: var(--fs-14);
+}
 
+.max-w-375 {
+    max-width: 375px;
+}
 
+.bottom-line {
+    width: 100%;
+    height: 2px;
+    background-color: #404040;
+    display: flex;
+}
 
+.color-b2 {
+    color: #B2B2B2;
+}
 
+.fs-12 {
+    font-size: var(--fs-12);
+}
 
 .fs-40 {
     font-size: var(--fs-md);
