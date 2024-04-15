@@ -72,3 +72,11 @@ window.addEventListener("scroll", function () {
         menu1.classList.remove("menu-color")
     }
 });
+
+let loader = document.querySelector(".loader");
+
+loader.style.display = "flex"
+
+setTimeout(() => {
+    loader.style.display = "none";
+}, 1000);
