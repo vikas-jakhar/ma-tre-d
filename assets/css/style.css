@@ -586,7 +586,7 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    z-index: 10;
+    z-index: 9;
     animation: 1s scrolltop infinite;
     place-items: center;
     cursor: pointer;
