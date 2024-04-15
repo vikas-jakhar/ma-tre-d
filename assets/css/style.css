@@ -316,7 +316,7 @@
 
 .text-4 {
     font-family: "Work Sans", sans-serif;
-    font-size: 20px;
+    font-size: var(--fs-20);
     font-weight: 600;
     line-height: 30.76px;
     color: var(--color-white);
@@ -390,6 +390,10 @@
     .month {
         display: none;
     }
+
+    .pr-38 {
+        padding-right: 38px;
+    }
 }
 
 
@@ -397,9 +401,13 @@
 
 
 
+.fs-40 {
+    font-size: var(--fs-md);
+}
 
-
-
+.fs-16 {
+    font-size: var(--fs-16);
+}
 
 .fs-48 {
     font-size: var(--fs-48);
@@ -412,6 +420,30 @@
 @media (min-width:768px) {
     .fs-md-20 {
         font-size: var(--fs-20);
+    }
+
+    :root {
+        /* font-size */
+        --fs-14: 14px;
+        --fs-16: 16px;
+        --fs-20: 20px;
+        --fs-24: 24px;
+        --fs-48: 48px;
+        --fs-sm: 23px;
+        --fs-md: 40px;
+        --fs-lg: 50px;
+        --fs-xl: 61px;
+        /* color */
+        --color-white: white;
+        --color-black: black;
+    }
+
+    .fs-md-20 {
+        font-size: var(--fs-20);
+    }
+
+    .fs-md-48 {
+        font-size: var(--fs-48);
     }
 }
 
@@ -438,6 +470,22 @@
         cursor: pointer;
         top: 50%;
         right: -40px;
+    }
+
+    :root {
+        /* font-size */
+        --fs-14: 14px;
+        --fs-16: 16px;
+        --fs-20: 20px;
+        --fs-24: 24px;
+        --fs-48: 48px;
+        --fs-sm: 23px;
+        --fs-md: 40px;
+        --fs-lg: 50px;
+        --fs-xl: 61px;
+        /* color */
+        --color-white: white;
+        --color-black: black;
     }
 }
 
