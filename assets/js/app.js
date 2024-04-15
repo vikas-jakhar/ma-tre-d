@@ -38,4 +38,37 @@ switch12.addEventListener("click", function () {
     sliderbtn.classList.toggle("btn-right");
     card1.classList.toggle("btn-avtive1");
     box12.classList.toggle("year11");
-})
+});
+
+
+const menulist = document.querySelector(".menu-list");
+const menuicon = document.querySelector(".menu-icon");
+
+menuicon.addEventListener("click", function () {
+    menulist.classList.toggle("showlist");
+});
+
+$(document).ready(function () {
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+        $(this).toggleClass('open');
+    });
+});
+
+const scrolltop1 = document.querySelector(".scrolltop");
+
+scrolltop1.addEventListener("click", function () {
+    window.scroll({
+        top: 0,
+    })
+});
+
+const menu1 = document.querySelector(".menu");
+
+window.addEventListener("scroll", function () {
+    if (document.documentElement.scrollTop > 100) {
+        menu1.classList.add("menu-color")
+    }
+    else {
+        menu1.classList.remove("menu-color")
+    }
+});
